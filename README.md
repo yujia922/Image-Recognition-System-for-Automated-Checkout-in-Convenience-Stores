@@ -18,11 +18,11 @@ For each label, we will record:
 This allows the inference pipeline to not only detect the bounding-boxes, but also sum the total value in the image automatically.
 Annotation format will follow YOLO format (.txt per image).
 ### 3. Model Training
-We will train the object detection model using PyTorch + YOLOv11.
+We will train the object detection model using PyTorch + YOLOv8.
 Key steps:
 - train/val/test split
 - augmentation (random crop, brightness, hue, blur)
-- model training with transfer learning (pretrained YOLOv11 weights)
+- model training with transfer learning (pretrained YOLOv8 weights)
 - performance evaluation (mAP, precision, recall)
 ### 4. Inference & Checkout Calculation
 Given an image (e.g. a table with multiple snacks lying on it), the trained model will output all detected products.
