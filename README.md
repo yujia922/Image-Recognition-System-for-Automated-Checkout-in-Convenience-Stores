@@ -59,6 +59,8 @@ Our dataset includes:
 - 孔雀香酥脆-香魚 $30
 - 蝦味先原味 $32
 - 北海鱈魚香絲 $50
+
+- 我們拍攝了總共 "2367" 張照片，並將其全數進行label
    
 ### 2. Labeling & Price Annotation
 We labeled the dataset using Roboflow.
