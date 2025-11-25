@@ -5,10 +5,10 @@ This project aims to build an automated checkout system for convenience stores u
 ### 1. Data Collection
 We collect a large set of real-world images of convenience-store snack products. The goal is to replicate a realistic scenario in which a customer places multiple items on a table and captures a single image for instant checkout.
 Our dataset includes:
-• 47 distinct snack products
-• Multiple brands, sizes, packaging variations
-• Single-item and multi-item images
-• Varying lighting and backgrounds
+- 47 distinct snack products
+- Multiple brands, sizes, packaging variations
+- Single-item and multi-item images
+- Varying lighting and backgrounds
 
 總計"47"項餅乾種類如下:
 - 樂事自然美味海鹽口味洋芋片 $35
