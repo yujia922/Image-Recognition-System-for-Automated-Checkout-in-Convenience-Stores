@@ -69,16 +69,16 @@ After training, a separate class-to-price mapping is used. The model outputs pro
 ### 3. Model Training
 We will train the object detection model using PyTorch + YOLOv8.
 Key steps:
-- train/val/test split
-- augmentation (random crop, brightness, hue, blur)
-- model training with transfer learning (pretrained YOLOv8 weights)
-- performance evaluation (mAP, precision, recall)
+- Train/val/test split
+- Augmentation (random crop, brightness, hue, blur)
+- Model training with transfer learning (pretrained YOLOv8 weights)
+- Performance evaluation (mAP, precision, recall)
 ### 4. Inference & Checkout Calculation
 Given an input image, the system:
-- detects all products
-- identifies each class
-- maps each class to its unit price
-- sums the prices to produce the final checkout amount
+- Detects all products
+- Identifies each class
+- Maps each class to its unit price
+- Sums the prices to produce the final checkout amount
 
 This creates a scanless checkout experience similar to camera-based retail systems.
 - We will use the DroidCam mobile app to turn a smartphone into a real-time camera for live detection and checkout demonstration.
