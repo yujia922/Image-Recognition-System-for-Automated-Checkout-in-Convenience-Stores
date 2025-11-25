@@ -9,6 +9,7 @@ Our dataset includes:
 - Multiple brands, sizes, packaging variations
 - Single-item and multi-item images
 - Varying lighting and backgrounds
+- Occlusion and partially overlapping items
 
 總計"47"項餅乾種類如下:
 - 樂事自然美味海鹽口味洋芋片 $35
@@ -60,12 +61,12 @@ Our dataset includes:
 - 北海鱈魚香絲 $50
    
 ### 2. Labeling & Price Annotation
-After data collection, we will annotate each individual product instance using a bounding-box based labeling tool (i.e. RoboFlow).
-For each label, we will record:
-- product class (brand / variant)
-- product unit price
-This allows the inference pipeline to not only detect the bounding-boxes, but also sum the total value in the image automatically.
-Annotation format will follow YOLO format (.txt per image).
+All images are annotated using Roboflow, employing bounding boxes for each product instance.
+For each annotation, we record:
+- Class label (brand + flavor/variant)
+- Unit price
+
+Labels follow YOLO format (one .txt per image), enabling the model to detect all items and compute the total cost automatically during inference.
 ### 3. Model Training
 We will train the object detection model using PyTorch + YOLOv8.
 Key steps:
