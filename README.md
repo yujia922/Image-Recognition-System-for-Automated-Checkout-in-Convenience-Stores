@@ -77,3 +77,4 @@ Key steps:
 ### 4. Inference & Checkout Calculation
 Given an image (e.g. a table with multiple snacks lying on it), the trained model will output all detected products.
 Then, we will sum the prices of all detected objects to generate the final total checkout amount.
+- 利用手機app DroidCam 讓手機鏡頭作為影像辨識的鏡頭
