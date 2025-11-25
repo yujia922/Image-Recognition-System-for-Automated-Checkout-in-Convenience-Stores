@@ -79,5 +79,6 @@ Given an input image, the system:
 - identifies each class
 - maps each class to its unit price
 - sums the prices to produce the final checkout amount
+
 This creates a scanless checkout experience similar to camera-based retail systems.
 - We will use the DroidCam mobile app to turn a smartphone into a real-time camera for live detection and checkout demonstration.
