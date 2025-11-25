@@ -61,12 +61,11 @@ Our dataset includes:
 - 北海鱈魚香絲 $50
    
 ### 2. Labeling & Price Annotation
-All images are annotated using Roboflow, employing bounding boxes for each product instance.
-For each annotation, we record:
-- Class label (brand + flavor/variant)
-- Unit price
+We labeled the dataset using Roboflow.
+Each product instance is annotated with a bounding box and its class only.
+We do not include price information in the annotations.
 
-Labels follow YOLO format (one .txt per image), enabling the model to detect all items and compute the total cost automatically during inference.
+After training, a separate class-to-price mapping is used. The model outputs product classes, and the system converts these class IDs into their corresponding prices to calculate the final total.
 ### 3. Model Training
 We will train the object detection model using PyTorch + YOLOv8.
 Key steps:
@@ -75,6 +74,10 @@ Key steps:
 - model training with transfer learning (pretrained YOLOv8 weights)
 - performance evaluation (mAP, precision, recall)
 ### 4. Inference & Checkout Calculation
-Given an image (e.g. a table with multiple snacks lying on it), the trained model will output all detected products.
-Then, we will sum the prices of all detected objects to generate the final total checkout amount.
-- 利用手機app DroidCam 讓手機鏡頭作為影像辨識的鏡頭
+Given an input image, the system:
+- detects all products
+- identifies each class
+- maps each class to its unit price
+- sums the prices to produce the final checkout amount
+This creates a scanless checkout experience similar to camera-based retail systems.
+- We will use the DroidCam mobile app to turn a smartphone into a real-time camera for live detection and checkout demonstration.
