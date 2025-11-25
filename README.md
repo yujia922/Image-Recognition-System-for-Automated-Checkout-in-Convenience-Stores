@@ -3,13 +3,12 @@
 ## Technical Approach
 This project aims to build an automated checkout system for convenience stores using computer vision. We will focus on snack products (especially chips) as the main category.
 ### 1. Data Collection
-We will photograph a large number of actual convenience store snack items across different shelves, lighting conditions, and angles.
-The objective is to simulate a realistic “put items on table → take one photo → auto checkout” scenario.
-We plan to collect images that reflect:
-- multiple brands of chips
-- different packaging sizes / colors / variants
-- multiple products in a single frame
-- occlusion cases (items overlapping)
+We collect a large set of real-world images of convenience-store snack products. The goal is to replicate a realistic scenario in which a customer places multiple items on a table and captures a single image for instant checkout.
+Our dataset includes:
+• 47 distinct snack products
+• Multiple brands, sizes, packaging variations
+• Single-item and multi-item images
+• Varying lighting and backgrounds
 
 總計"47"項餅乾種類如下:
 - 樂事自然美味海鹽口味洋芋片 $35
